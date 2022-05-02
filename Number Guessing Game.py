@@ -18,7 +18,7 @@ def main():
     restart = (input("Czy chcesz jeszcze raz spróbować? (y/n) "))
     if restart == 'y':
         main()
-    elif restart == 'n':
+    else:
         print("Szkoda :(, to do zobaczenia!")
 main()
 input("Press enter to quit.")
