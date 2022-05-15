@@ -1,17 +1,17 @@
-# This program will convert lb's to kg's
-lb = 2.204623
-rounding = int(input("Please enter the number you will want to be rounding to (max=6): "))
+# This program will convert lb's to kg's or in reverse
+lbFactor = 2.204623
+roundingNumber = int(input("Input the number you will be rounding to: "))
 def main():
-    modes = int(input("Please select your mode: \n1 = kg to lb.\n2 = lb to kg. "))
-    if modes != 1 and modes != 2:
+    modeSelection = int(input("Please select your mode: \n1 = kg to lb.\n2 = lb to kg. "))
+    if modeSelection != 1 and modeSelection != 2:
         print("Error: Incorrect mode.")
         main()
     else:
-        input1 = int(input("Enter weight you will be converting: "))
-        if modes == 1:
-          print(input1,"kg's converted to lb's is:",round(input1*lb, rounding))
+        inputWeight = int(input("Enter weight you will be converting: "))
+        if modeSelection == 1:
+          print(inputWeight,"kg's converted to lb's is:",round(inputWeight*lbFactor, roundingNumber))
         else:
-            print(input1,"lb's converted to kg's is:",round(input1/lb, rounding))
+            print(inputWeight,"lb's converted to kg's is:",round(inputWeight/lbFactor, roundingNumber))
     def restarting():
         restart = input("Do you want to convert again? (y/n) ")
         if restart != 'y' and restart != 'n':
