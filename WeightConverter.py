@@ -16,7 +16,6 @@ def main():
             print(inputWeight,"kg's converted to oz's is:",round(inputWeight*ozFactor, 3))
         elif modeSelection == 4:
             print(inputWeight,"oz's converted to kg's is:",round(inputWeight/ozFactor, 3))
-main()
 def restarting():
     restart = input("Do you want to convert again? (y/n) ")
     if restart != 'y' and restart != 'n':
@@ -27,4 +26,5 @@ def restarting():
     elif restart == 'n':
         input("Have a good day!\nPress enter to exit.")
         quit()
+main()
 restarting()
