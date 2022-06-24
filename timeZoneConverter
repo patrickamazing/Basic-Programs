@@ -1,0 +1,18 @@
+# This program converts time-zones to different time-zones.
+
+def main():
+    timeInput = int(input("Please enter your current time in hours: "))
+    timeZoneInput = input("Please enter your time zone: ")
+    timeZone = input("Please enter the time zone you're converting to: ")
+    if timeZoneInput == 'PDT':
+        if timeZone == 'PDT':
+            print("These are the same time zones...")
+            main()
+        elif timeZone == 'MDT':
+            timeInput = timeInput + int(1)
+            if timeInput > int(24):
+                timeInput = timeInput - int(24)
+                print("The time in", timeZone, "is", timeInput)
+            else:
+                print("The time in", timeZone, "is", timeInput)
+main()

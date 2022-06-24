@@ -1,33 +1,33 @@
 # This program will show you the numbers inputted from biggest to smallest
 
 def main():
-    a = int(input("First Number: "))
-    b = int(input("Second Number: "))
-    c = int(input("Third Number: "))
-    if a >= b and a >= c:
-        print("1 :", a)
-        if b >= c:
-            print("2 :", b)
-            print("3 :", c)
-        elif b <= c:
-            print("2 :", c)
-            print("3 :", b)
-    elif a >= b and a <= c:
-        print("1 :", c)
-        print("2 :", a)
-        print("3 :", b)
-    elif a <= b and a <= c:
-        if b <= c:
-            print("1 :", c)
-            print("2 :", b)
+    intA = int(input("First Number: "))
+    intB = int(input("Second Number: "))
+    intC = int(input("Third Number: "))
+    if intA >= intB and intA >= intC:
+        print("1 :", intA)
+        if intB >= intC:
+            print("2 :", intB)
+            print("3 :", intC)
+        elif intB <= intC:
+            print("2 :", intC)
+            print("3 :", intB)
+    elif intA >= intB and intA <= intC:
+        print("1 :", intC)
+        print("2 :", intA)
+        print("3 :", intB)
+    elif intA <= intB and intA <= intC:
+        if intB <= intC:
+            print("1 :", intC)
+            print("2 :", intB)
         else:
-            print("1 :", b)
-            print("2 :", c)
-        print("3 :", a)
-    elif a <= b and a >= c:
-        print("1 :", b)
-        print("2 :", a)
-        print("3 :", c)
+            print("1 :", intB)
+            print("2 :", intC)
+        print("3 :", intA)
+    elif intA <= intB and intA >= intC:
+        print("1 :", intB)
+        print("2 :", intA)
+        print("3 :", intC)
     
     restart = input("Do you want to start again? (y/n) ")
     if restart == 'y':
