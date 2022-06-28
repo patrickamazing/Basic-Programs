@@ -1,22 +1,22 @@
-print("Ta gra polega na tym, aby zgadnąć liczbe która jest pomiędzy 0 a 50.")
+print("A number guessing game from 0-50.")
 def main():
     import random
     random_number = random.randint(0,50)
     # print(random_number)
     def game():
-        guess_number = int(input("Proszę wpisz liczbe: "))
+        guess_number = int(input("Guess a number:\n"))
         if guess_number == random_number:
-            print("Dobrze! Zgadłeś liczbe!")
+            print("Good job, you got it!")
         elif guess_number > random_number:
-            print("Liczba wpisana jest zbyt duża, spróbuj jeszcze raz!")
+            print("Incorrect! your number is greater than the correct one.")
             game()
         elif guess_number < random_number:
-            print("Liczba wpisana jest zbyt mała, spróbuj jeszcze raz!")
+            print("Incorrect! your number is lesser than the correct one.")
             game()
     game()
     
-    restart = (input("Czy chcesz jeszcze raz spróbować? (y/n) "))
-    if restart == 'y':
+    restart = (input("Do you want to try again?"))
+    if restart == 'y' or restart == 'yes':
         main()
     else:
         print("Szkoda :(, to do zobaczenia!")
