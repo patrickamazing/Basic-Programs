@@ -15,7 +15,7 @@ def main():
             game()
     game()
     
-    restart = (input("Do you want to try again?"))
+    restart = (input("Do you want to try again?\n"))
     if restart == 'y' or restart == 'yes':
         main()
     else:
